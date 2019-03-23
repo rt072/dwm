@@ -1,7 +1,7 @@
-diff --git a/config.def.h b/config.def.h
+diff --git a/config.h b/config.h
 index 1c0b587..2d824d1 100644
---- a/config.def.h
-+++ b/config.def.h
+--- a/config.h
++++ b/config.h
 @@ -3,6 +3,10 @@
  /* appearance */
  static const unsigned int borderpx  = 1;        /* border pixel of windows */
