@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	{ "Claws-mail", 	  NULL,       NULL,       1 << 3,            1,           -1 },
 	{ "Seafile Client",   NULL,       NULL,       1 << 3,            1,           -1 },
 	{ "Mousepad", 		  NULL,       NULL,       0,    	         1,           -1 },
-	{ "Subl3", 			  NULL,       NULL,       0 << 5,            1,           -1 },
+	{ "Subl3", 			  NULL,       NULL,       1 << 5,            1,           -1 },
 };
 
 /* layout(s) */
