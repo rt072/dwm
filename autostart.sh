@@ -1,10 +1,11 @@
 #!/bin/bash 
 compton --config ~/.config/compton/compton.conf &
+pulseaudio --daemonize &
 pasystray &
 /home/rt072/.scripts/chwall &
 
 dte(){
-  dte="$(date +"%A, %d %B |  %l:%M%p")"
+  dte="$(date +"%A, %d %B |  %k:%M%p")"
   echo -e " $dte"
 }
 
