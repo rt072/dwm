@@ -1,7 +1,7 @@
 #!/bin/bash 
 compton --config ~/.config/compton/compton.conf &
 #nitrogen --restore &
-pasystray &
+#pasystray &
 #urxvtd -q -o -f &
 /home/rt072/.scripts/chwall &
 
@@ -37,6 +37,6 @@ bat(){
 
 
 while true; do
-    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(dte)"
+    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(dte)      "
      sleep 5s    # Update time every ten seconds
 done &
