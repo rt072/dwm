@@ -17,7 +17,7 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char col_cyan[]        = "#4e9699";
 
 static const unsigned int baralpha = 0xee;
 static const unsigned int borderalpha = OPAQUE;
@@ -88,9 +88,9 @@ static Key keys[] = {
 	{ MODKEY , 			      		XK_Escape,  spawn,	        SHCMD ("oblogout")},
     { 0,                      		0x1008ff02, spawn,          SHCMD ("xbacklight -inc 5")},
     { 0,                      		0x1008ff03, spawn,          SHCMD ("xbacklight -dec 5")},
-    { 0,                      		0x1008ff13, spawn,          SHCMD ("amixer sset Master 5dB- unmute")},
+    { 0,                      		0x1008ff11, spawn,          SHCMD ("amixer sset Master 5dB- unmute")},
     { 0,                      		0x1008ff12, spawn,          SHCMD ("amixer sset Master mute")},
-    { 0 ,                     		0x1008ff11, spawn,          SHCMD ("amixer sset Master 5dB+ unmute")},
+    { 0 ,                     		0x1008ff13, spawn,          SHCMD ("amixer sset Master 5dB+ unmute")},
     { MODKEY|ControlMask,     		XK_f,       spawn,          SHCMD ("firefox-esr")},
     { MODKEY|ControlMask,    		XK_s,       spawn,          SHCMD ("spacefm")},
     { 0,                      		0xff61,     spawn,          SHCMD ("scrot -e 'mv $f ~/Pictures/screenshots/'")},
