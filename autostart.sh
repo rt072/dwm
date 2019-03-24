@@ -1,8 +1,11 @@
 #!/bin/bash 
 compton --config ~/.config/compton/compton.conf &
-pulseaudio --daemonize &
-pasystray &
 /home/rt072/.scripts/chwall &
+pulseaudio --daemonize &
+
+if ! pgrep 'pasystray'; then 
+pasystray &; 
+fi
 
 dte(){
   dte="$(date +"%A, %d %B |  %k:%M%p")"
