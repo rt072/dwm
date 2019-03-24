@@ -33,13 +33,14 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",    		  NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox", 		  NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "Spacefm",  		  NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",    		  NULL,       NULL,       0,            	 1,           -1 },
+	{ "Firefox", 		  NULL,       NULL,       1 << 2,          	 0,           -1 },
+	{ "Spacefm",  		  NULL,       NULL,       0,         	     1,           -1 },
     { "TelegramDesktop",  NULL,       NULL,       1 << 3,            1,           -1 },
 	{ "Claws-mail", 	  NULL,       NULL,       1 << 3,            1,           -1 },
 	{ "Seafile Client",   NULL,       NULL,       1 << 3,            1,           -1 },
-	{ "Mousepad", 		  NULL,       NULL,       0,            1,           -1 },
+	{ "Mousepad", 		  NULL,       NULL,       0,    	         1,           -1 },
+	{ "Subl3", 			  NULL,       NULL,       0 << 5,            1,           -1 },
 };
 
 /* layout(s) */
