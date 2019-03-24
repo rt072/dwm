@@ -85,17 +85,6 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ Mod1Mask,             	    XK_F2,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,		                XK_Return,  spawn,          {.v = termcmd } },
-	{ MODKEY , 			      		XK_Escape,  spawn,	        SHCMD ("oblogout")},
-    { 0,                      		0x1008ff02, spawn,          SHCMD ("xbacklight -inc 5")},
-    { 0,                      		0x1008ff03, spawn,          SHCMD ("xbacklight -dec 5")},
-    { 0,                      		0x1008ff12, spawn,          SHCMD ("amixer -q -D pulse set Master toggle")},
-    { 0,                      		0x1008ff11, spawn,          SHCMD ("amixer -q -D pulse set Master 3%- unmute")},
-    { 0 ,                     		0x1008ff13, spawn,          SHCMD ("amixer -q -D pulse set Master 3%+ unmute")},
-    { MODKEY|ControlMask,     		XK_f,       spawn,          SHCMD ("firefox-esr")},
-    { MODKEY|ControlMask,    		XK_s,       spawn,          SHCMD ("spacefm")},
-    { 0,                      		0xff61,     spawn,          SHCMD ("scrot -e 'mv $f ~/Pictures/screenshots/'")},
-    { MODKEY,                 		0xff61,     spawn,          SHCMD ("gnome-screenshot -a")},
-    { Mod1Mask,             	    XK_t,       spawn,          SHCMD ("translate_textbox")},
 	{ MODKEY,                       XK_b,       togglebar,      {0} },
 	{ MODKEY,                       XK_j,       focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,       focusstack,     {.i = -1 } },
@@ -128,6 +117,26 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                       8)
     { MODKEY|ShiftMask,       		XK_r,      self_restart,    {0} },
 	{ MODKEY|ShiftMask,             XK_q,      quit,            {0} },
+
+	/* User Programs */
+	{ MODKEY , 			      		XK_Escape,  spawn,	        SHCMD ("oblogout")},
+    { 0,                      		0x1008ff02, spawn,          SHCMD ("xbacklight -inc 5")},
+    { 0,                      		0x1008ff03, spawn,          SHCMD ("xbacklight -dec 5")},
+    { 0,                      		0x1008ff12, spawn,          SHCMD ("amixer -q -D pulse set Master toggle")},
+    { 0,                      		0x1008ff11, spawn,          SHCMD ("amixer -q -D pulse set Master 3%- unmute")},
+    { 0 ,                     		0x1008ff13, spawn,          SHCMD ("amixer -q -D pulse set Master 3%+ unmute")},
+    { MODKEY|ControlMask,     		XK_f,       spawn,          SHCMD ("firefox-esr")},
+    { MODKEY|ControlMask,    		XK_s,       spawn,          SHCMD ("spacefm")},
+    { 0,                      		0xff61,     spawn,          SHCMD ("scrot -e 'mv $f ~/Pictures/screenshots/'")},
+    { MODKEY,                 		0xff61,     spawn,          SHCMD ("gnome-screenshot -a")},
+    { MODKEY|ControlMask,      		XK_v,       spawn,          SHCMD ("vncviewer")},
+    { MODKEY|ControlMask,      		XK_l,       spawn,          SHCMD ("i3lock-fancy")},
+    { Mod1Mask,             	    XK_t,       spawn,          SHCMD ("translate_textbox")},
+    { ControlMask|Mod1Mask,    	    XK_Up,      spawn,          SHCMD ("mpc volume +2")},
+    { ControlMask|Mod1Mask,    	    XK_Down,    spawn,          SHCMD ("mpc volume -2")},
+    { ControlMask|Mod1Mask,    	    XK_p,       spawn,          SHCMD ("mpc toggle")},
+    { ControlMask|Mod1Mask,    	    XK_Left,    spawn,          SHCMD ("mpc prev")},
+    { ControlMask|Mod1Mask,    	    XK_Right,   spawn,          SHCMD ("mpc next")},
 };
 
 /* button definitions */
