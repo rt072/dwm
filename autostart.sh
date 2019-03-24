@@ -1,8 +1,6 @@
 #!/bin/bash 
 compton --config ~/.config/compton/compton.conf &
-#nitrogen --restore &
-#pasystray &
-#urxvtd -q -o -f &
+pasystray &
 /home/rt072/.scripts/chwall &
 
 dte(){
