@@ -1,10 +1,17 @@
 #!/bin/bash 
-compton --config ~/.config/compton/compton.conf &
 /home/rt072/.scripts/chwall &
+
+
+if ! pgrep 'pulseaudio'; then 
 pulseaudio --daemonize &
+fi
+
+if ! pgrep 'compton'; then 
+compton --config ~/.config/compton/compton.conf &
+fi
 
 if ! pgrep 'pasystray'; then 
-pasystray &; 
+pasystray &
 fi
 
 dte(){
