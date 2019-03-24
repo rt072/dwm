@@ -95,6 +95,7 @@ static Key keys[] = {
     { MODKEY|ControlMask,    		XK_s,       spawn,          SHCMD ("spacefm")},
     { 0,                      		0xff61,     spawn,          SHCMD ("scrot -e 'mv $f ~/Pictures/screenshots/'")},
     { MODKEY,                 		0xff61,     spawn,          SHCMD ("gnome-screenshot -a")},
+    { Mod1Mask,             	    XK_t,       spawn,          SHCMD ("translate_textbox")},
 	{ MODKEY,                       XK_b,       togglebar,      {0} },
 	{ MODKEY,                       XK_j,       focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,       focusstack,     {.i = -1 } },
