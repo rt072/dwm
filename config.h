@@ -18,10 +18,18 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+
+static const unsigned int baralpha = 0xee;
+static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+};
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
@@ -32,7 +40,7 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
+	/* class     		 instance    title       tags mask     isfloating   	monitor */
 	{ "Gimp",    		  NULL,       NULL,       0,            	 1,           -1 },
 	{ "Firefox", 		  NULL,       NULL,       1 << 2,          	 0,           -1 },
 	{ "Spacefm",  		  NULL,       NULL,       0,         	     1,           -1 },
@@ -40,7 +48,7 @@ static const Rule rules[] = {
 	{ "Claws-mail", 	  NULL,       NULL,       1 << 3,            1,           -1 },
 	{ "Seafile Client",   NULL,       NULL,       1 << 3,            1,           -1 },
 	{ "Mousepad", 		  NULL,       NULL,       0,    	         1,           -1 },
-	{ "Subl3", 			  NULL,       NULL,       1 << 5,            1,           -1 },
+	{ "Subl3", 			  NULL,       NULL,       1 << 5,            0,           -1 },
 };
 
 /* layout(s) */
