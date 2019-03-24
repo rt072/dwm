@@ -1,0 +1,1 @@
+/home/rt072/.dwm/autostart.sh
