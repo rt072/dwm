@@ -26,7 +26,7 @@ dte(){
 
 mem(){
   mem=`free | awk '/Mem/ {printf "%d MiB\n", $3 / 1024.0}'`
-  echo -e " $mem"
+  echo -e " $mem"
 }
 
 cpu(){
