@@ -9,8 +9,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const int horizpadbar        = 6;        /* horizontal padding for statusbar */
-static const int vertpadbar         = 2;        /* vertical padding for statusbar */
+static const int horizpadbar        = 7;        /* horizontal padding for statusbar */
+static const int vertpadbar         = 1;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "Liberation Mono:size=11",
                                         "fontawesome:size=11:antialias=true:autohint=true"
                                         "Icons:size=11:antialias=true:autohint=true"
