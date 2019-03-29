@@ -126,8 +126,8 @@ static Key keys[] = {
 
 	/* User Programs */
 	{ MODKEY , 			      		XK_Escape,  spawn,	        SHCMD ("oblogout")},
-    { 0,                      		0x1008ff02, spawn,          SHCMD ("xbacklight -inc 5")},
-    { 0,                      		0x1008ff03, spawn,          SHCMD ("xbacklight -dec 5")},
+    { 0,                      		0x1008ff02, spawn,          SHCMD ("xbacklight -inc 5 && xbacklight_notify")},
+    { 0,                      		0x1008ff03, spawn,          SHCMD ("xbacklight -dec 5 && xbacklight_notify")},
     { 0,                      		0x1008ff12, spawn,          SHCMD ("amixer -q -D pulse set Master toggle")},
     { 0,                      		0x1008ff11, spawn,          SHCMD ("amixer -q -D pulse set Master 3%- unmute")},
     { 0 ,                     		0x1008ff13, spawn,          SHCMD ("amixer -q -D pulse set Master 3%+ unmute")},
