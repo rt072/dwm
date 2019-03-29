@@ -15,7 +15,7 @@ pasystray &
 fi
 
 dte(){
-  dte="$(date +"%A, %d %B |  %k:%M%p")"
+  dte="$(date +"%a, %d %B |  %k:%M%p")"
   echo -e " $dte"
 }
 
@@ -23,6 +23,11 @@ dte(){
 #  upd=`checkupdates | wc -l`
 #  echo -e "⟳  $upd updates"
 #}
+
+freeroot(){
+  freeroot=`df -lh / | grep cryptroot | awk '{print $4}'`
+  echo -e " $freeroot"
+}
 
 mem(){
   mem=`free | awk '/Mem/ {printf "%d MiB\n", $3 / 1024.0}'`
@@ -46,6 +51,6 @@ bat(){
 
 
 while true; do
-    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(dte)      "
+    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(freeroot) | $(dte)      "
      sleep 5s    # Update time every ten seconds
 done &
