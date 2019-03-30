@@ -14,9 +14,14 @@ if ! pgrep 'pasystray'; then
 pasystray &
 fi
 
+xkb(){
+  xkb=`xkblayout`
+  echo -e " $xkb        "
+}
+
 dte(){
   dte="$(date +"%a, %d %B |  %k:%M%p")"
-  echo -e " $dte        "
+  echo -e " $dte"
 }
 
 #upd(){
@@ -51,6 +56,6 @@ bat(){
 
 
 while true; do
-    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(freeroot) | $(dte)"
+    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(freeroot) | $(dte) | $(xkb)"
      sleep 5s    # Update time every ten seconds
 done &
