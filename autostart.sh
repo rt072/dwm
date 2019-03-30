@@ -16,7 +16,7 @@ fi
 
 dte(){
   dte="$(date +"%a, %d %B |  %k:%M%p")"
-  echo -e " $dte"
+  echo -e " $dte        "
 }
 
 #upd(){
@@ -41,7 +41,7 @@ cpu(){
   read cpu a b c idle rest < /proc/stat
   total=$((a+b+c+idle))
   cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
-  echo -e " $cpu% "
+  echo -e " $cpu%"
 }
 
 bat(){
@@ -51,6 +51,6 @@ bat(){
 
 
 while true; do
-    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(freeroot) | $(dte)      "
+    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(freeroot) | $(dte)"
      sleep 5s    # Update time every ten seconds
 done &
