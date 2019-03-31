@@ -72,6 +72,8 @@ getBattery() {
         echo -ne "${bat_icons[1]} ${perc}%"
     elif [ ${perc} -le "100" ]; then
         echo -ne "${bat_icons[0]} ${perc}%"
+    elif [ ${perc} -eq "100" ]; then
+        echo -ne "${bat_icons[0]} ${perc}%"
     fi
 }
 
