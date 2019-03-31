@@ -13,7 +13,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = 7;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 1;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "Liberation Mono:size=10",
-                                        "fontawesome:size=10:antialias=true:autohint=true"
+                                        "FontAwesome:size=9:antialias=true:autohint=true"
 };
 static const char dmenufont[]       = "Liberation Mono:size=11";
 static const char col_gray1[]       = "#222222";
