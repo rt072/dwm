@@ -14,7 +14,9 @@ Desktop
 </p>
 
 Left side panel:
+
 ![screenshot](./screenshots/left.png)
 
 Right side panel:
+
 ![screenshot](./screenshots/right.png)
