@@ -49,13 +49,50 @@ cpu(){
   echo -e " $cpu%"
 }
 
-bat(){
-  bat=$(acpi -b | cut -d"," -f2 | cut -d" " -f2)
-  echo -e " $bat"
+#!/bin/bash
+
+getBattery() {
+    perc=$(acpi -b | awk '/Battery/ {print $4}' | cut -d% -f1)
+    time=$(acpi -b | awk '/Battery/ {print " (" substr($5,1,5)")"}')
+    is_charging=$(acpi -a | awk '/Adapter/ {print $3}')
+
+    if [ "${is_charging}" == "on-line" ]; then
+      bat_icons=("" "" "" "" "" "")
+    else
+      bat_icons=("" "" "" "" "")
+    fi
+
+    if [ ${perc} -eq "100" ]; then
+        echo -ne "${bat_icons[0]} ${perc}%"
+    elif [ ${perc} -le "100" ]; then
+        echo -ne "${bat_icons[1]} ${perc}%"
+    elif [ ${perc} -le "75" ]; then
+        echo -ne "${bat_icons[2]} ${perc}%"
+    elif [ ${perc} -le "50" ]; then
+        echo -ne "${bat_icons[3]} ${perc}%"
+    elif [ ${perc} -le "20" ]; then
+        echo -ne "${bat_icons[4]} ${perc}% ${time}"
+    fi
 }
 
+getSound() {
+    volume=$(pactl list sinks | grep 'Громкость:' | awk '{print $5}')
+    is_muted=$(amixer get Master | awk '/%/ {gsub(/[\[\]]/,""); print $6}' | tail -1)
+    cur_device=$(pactl list sinks | awk '/Активный порт:/ {print substr($3,15)}' | grep -v "^$")
+    if [ ${cur_device} == "headphones" ]; then
+        out_device=(" " " ")
+    else
+        out_device=(" " " ")
+    fi
+
+    if [ ${is_muted} == "on" ]; then
+        echo -ne "${out_device[0]}${volume}"
+    else
+        echo -ne "${out_device[1]}${volume}"
+    fi
+}
 
 while true; do
-    xsetroot -name "$(cpu) | $(bat) | $(mem) | $(freeroot) | $(dte) | $(xkb)"
+    xsetroot -name "$(cpu) | $(getSound) | $(getBattery) | $(mem) | $(freeroot) | $(dte) | $(xkb)"
      sleep 5s    # Update time every ten seconds
 done &
