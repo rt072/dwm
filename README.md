@@ -4,7 +4,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 ## Installation
 
-
-```lua
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+```bash
+make
+make install
 ```
