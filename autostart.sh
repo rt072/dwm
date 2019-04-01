@@ -62,15 +62,15 @@ getBattery() {
       bat_icons=("" "" "" "" "")
     fi
 
-    if [ ${perc} -le "20" ]; then
+    if [ ${perc} -lt "20" ]; then
         echo -ne "${bat_icons[4]} ${perc}% ${time}"
-    elif [ ${perc} -le "50" ]; then
+    elif [ ${perc} -lt "35" ]; then
         echo -ne "${bat_icons[3]} ${perc}%"
-    elif [ ${perc} -le "75" ]; then
+    elif [ ${perc} -lt "75" ]; then
         echo -ne "${bat_icons[2]} ${perc}%"
-    elif [ ${perc} -le "90" ]; then
+    elif [ ${perc} -lt "90" ]; then
         echo -ne "${bat_icons[1]} ${perc}%"
-    elif [ ${perc} -le "100" ]; then
+    elif [ ${perc} -lt "100" ]; then
         echo -ne "${bat_icons[0]} ${perc}%"
     elif [ ${perc} -eq "100" ]; then
         echo -ne "${bat_icons[0]} ${perc}%"
