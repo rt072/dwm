@@ -16,7 +16,7 @@ fi
 
 xkb(){
   xkb=`xkblayout`
-  echo -e " $xkb        "
+  echo -e " $xkb         "
 }
 
 dte(){
@@ -95,6 +95,6 @@ getSound() {
 }
 
 while true; do
-    xsetroot -name "$(cpu) | $(getSound) | $(getBattery) | $(mem) | $(freeroot) | $(dte) | $(xkb)"
+    xsetroot -name "$(cpu) | $(getSound) | $(getBattery) | $(mem) | $(freeroot) | $(dte) | $(xkb) |"
      sleep 5s    # Update time every ten seconds
 done &
