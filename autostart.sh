@@ -24,10 +24,10 @@ dte(){
   echo -e " $dte"
 }
 
-#upd(){
-#  upd=`checkupdates | wc -l`
-#  echo -e "⟳  $upd updates"
-#}
+upd(){
+ upd=`head -n 1 /tmp/updates.txt`
+ echo -e " $upd"
+}
 
 freeroot(){
   freeroot=`df -lh / | grep cryptroot | awk '{print $4}'`
@@ -95,6 +95,6 @@ getSound() {
 }
 
 while true; do
-    xsetroot -name "$(cpu) | $(getSound) | $(getBattery) | $(mem) | $(freeroot) | $(dte) | $(xkb) |"
-     sleep 5s    # Update time every ten seconds
+    xsetroot -name "$(cpu) | $(getSound) | $(getBattery) | $(mem) | $(freeroot) | $(upd) | $(dte) | $(xkb) |"
+    sleep 5s    # Update time every ten seconds
 done &
