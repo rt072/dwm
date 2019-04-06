@@ -147,7 +147,8 @@ static Key keys[] = {
     { ControlMask|Mod1Mask,    	    XK_Down,    spawn,          SHCMD ("mpc volume -2")},
     { ControlMask|Mod1Mask,    	    XK_p,       spawn,          SHCMD ("mpc toggle")},
     { ControlMask|Mod1Mask,    	    XK_Left,    spawn,          SHCMD ("mpc prev")},
-    { ControlMask|Mod1Mask,    	    XK_Right,   spawn,          SHCMD ("mpc next")},
+    { ControlMask|Mod1Mask,         XK_Right,   spawn,          SHCMD ("mpc next")},
+    { ControlMask|Mod1Mask,    	    XK_u,       spawn,          SHCMD ("mpc update")},
 };
 
 /* button definitions */
