@@ -8,15 +8,16 @@ make
 make install
 ```
 #### Screenshots
-Desktop
+Desktop 1
 <p align="center">
- <img src="https://github.com/rt072/dwm/blob/dev/screenshots/desktop.png">
+ <img src="https://github.com/rt072/dwm/blob/dev/screenshots/desktop-1.png">
 </p>
 
-Left side panel:
+Desktop 2
+<p align="center">
+ <img src="https://github.com/rt072/dwm/blob/dev/screenshots/desktop-2.png">
+</p>
 
-![screenshot](./screenshots/left.png)
+Topbar with tags, list open windows and system information:
 
-Right side panel:
-
-![screenshot](./screenshots/right.png)
+![screenshot](./screenshots/topbar.png)
