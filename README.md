@@ -9,15 +9,12 @@ make install
 ```
 #### Screenshots
 Desktop 1
-<p align="center">
- <img src="https://github.com/rt072/dwm/blob/dev/screenshots/desktop-1.png">
-</p>
+![screenshot](./screenshots/desktop-1.png)
+
 
 Desktop 2
-<p align="center">
- <img src="https://github.com/rt072/dwm/blob/dev/screenshots/desktop-2.png">
-</p>
+![screenshot](./screenshots/desktop-2.png)
 
-Topbar with tags, list open windows and system information:
 
+Topbar with tags, list open windows, system information and system tray:
 ![screenshot](./screenshots/topbar.png)
