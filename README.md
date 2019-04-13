@@ -1,8 +1,8 @@
-### dwm - dynamic window manager
+## dwm - dynamic window manager
 *dwm is an extremely fast, small, and dynamic window manager for X.*
 
 
-#### Installation
+### Installation
 
 ```bash
 $ make
@@ -11,13 +11,13 @@ $ make clean
 ```
 
 
-#### Configuration
+### Configuration
 
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
 
 
-#### Screenshots
+### Screenshots
 Desktop with terminals
 ![screenshot](./.screenshots/desktop-1.png)
 
@@ -33,7 +33,7 @@ File manager and terminal
 * System tray ![screenshot](./.screenshots/tray.png)
 
 
-#### My Keybindings
+### My Keybindings
 
 The MODKEY is set to the `Super` key (`Windows` key)
 
