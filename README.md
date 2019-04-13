@@ -8,7 +8,7 @@ make
 make install
 make clean
 ```
-# Configuration
+#### Configuration
 
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
@@ -16,11 +16,11 @@ and (re)compiling the source code.
 #### Screenshots
 
 Desktop 1
-![screenshot](./screenshots/desktop-1.png)
+![screenshot](./.screenshots/desktop-1.png)
 
 
 Desktop 2
-![screenshot](./screenshots/desktop-2.png)
+![screenshot](./.screenshots/desktop-2.png)
 
 
 * Taglist ![screenshot](./.screenshots/tags.png)
