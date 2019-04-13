@@ -16,4 +16,4 @@ Desktop 2
 ![screenshot](./screenshots/desktop-2.png)
 
 
-Taglist ![screenshot](./screenshots/topbar.png) 123
+Taglist ![screenshot](./screenshots/tags.png) 123
