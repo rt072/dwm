@@ -16,5 +16,4 @@ Desktop 2
 ![screenshot](./screenshots/desktop-2.png)
 
 
-Topbar with tags, list open windows, system information and system tray:
-![screenshot](./screenshots/topbar.png)
+Taglist ![screenshot](./screenshots/topbar.png) 123
