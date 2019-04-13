@@ -66,7 +66,7 @@ getBattery() {
         echo -ne "${bat_icons[4]} ${perc}% ${time}"
         # notify-send -u critical $perc $time -i battery-020
     elif [ ${perc} -lt "20" ]; then
-        echo -ne "${bat_icons[3]} ${perc} ${time}%"
+        echo -ne "${bat_icons[3]} ${perc} ${time}"
     elif [ ${perc} -lt "35" ]; then
         echo -ne "${bat_icons[3]} ${perc}%"
     elif [ ${perc} -lt "70" ]; then
