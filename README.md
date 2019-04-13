@@ -1,6 +1,7 @@
 ### dwm - dynamic window manager
 *dwm is an extremely fast, small, and dynamic window manager for X.*
 
+
 #### Installation
 
 ```bash
@@ -8,10 +9,13 @@ $ make
 $ sudo make install
 $ make clean
 ```
+
+
 #### Configuration
 
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
 
 #### Screenshots
 Desktop with terminals
@@ -27,6 +31,7 @@ File manager and terminal
 * List open windows ![screenshot](./.screenshots/windows-list.png)
 * System status ![screenshot](./.screenshots/status.png) CPU Load, volume info(icon change when headphones plugged), battery info(when battery level change, icon change too), memory info, free space on SSD, how many updates available, calendar, time and keyboard layout.
 * System tray ![screenshot](./.screenshots/tray.png)
+
 
 #### My Keybindings
 
@@ -44,3 +49,7 @@ The MODKEY is set to the `Super` key (`Windows` key)
 | `MODKEY + SHIFT + k` | rotate stack -1 (rotates the windows in the stack) |
 | `MODKEY + h` | setmfact -0.05 (decreases window width) |
 | `MODKEY + l` | setmfact +0.05 (increases window width) |
+| `MODKEY + t` | tiling mode |
+| `MODKEY + f` | floating mode |
+| `MODKEY + m` | monocle mode |
+| `MODKEY + g` | grid mode |
