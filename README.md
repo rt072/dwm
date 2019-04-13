@@ -16,4 +16,8 @@ Desktop 2
 ![screenshot](./screenshots/desktop-2.png)
 
 
-Taglist ![screenshot](./screenshots/tags.png) 123
+* Taglist ![screenshot](./screenshots/tags.png)
+* Change tiling mode(button)![screenshot](./screenshots/tiling-mode.png)
+* List open windows ![screenshot](./screenshots/windows-list.png)
+* System status ![screenshot](./screenshots/status.png)
+* System tray ![screenshot](./screenshots/tray.png)
