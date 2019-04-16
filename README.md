@@ -9,7 +9,7 @@ $ make
 $ sudo make install
 $ make clean
 ```
-And add to .xinitrc
+And add to *.xinitrc*
 ```bash
 ...
 exec dwm
