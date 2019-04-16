@@ -34,8 +34,6 @@ File manager and terminal
 * Notification system - Dunst ![screenshot](./.screenshots/dunst.png)
 
 
-
-
 ### My Keybindings
 
 The MODKEY is set to the `Super` key (`Windows` key)
@@ -56,3 +54,18 @@ The MODKEY is set to the `Super` key (`Windows` key)
 | `MODKEY + f` | floating mode |
 | `MODKEY + m` | monocle mode |
 | `MODKEY + g` | grid mode |
+
+
+### Patches
+
+1. alpha
+2. attachaside
+3. autostart
+4. cyclelayouts
+5. fancybar
+6. gridmode
+7. selfrestart
+8. rotatestack
+9. statuspadding
+10. systray
+11. uselessgap
