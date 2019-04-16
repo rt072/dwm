@@ -81,7 +81,8 @@ getBattery() {
 }
 
 getSound() {
-    volume=$(pactl list sinks | grep 'Громкость:' | awk '{print $5}')
+    # volume=$(pactl list sinks | grep 'Громкость:' | awk '{print $5}'`)
+    volume=$(pamixer --get-volume)
     is_muted=$(amixer get Master | awk '/%/ {gsub(/[\[\]]/,""); print $6}' | tail -1)
     cur_device=$(pactl list sinks | awk '/Активный порт:/ {print substr($3,15)}' | grep -v "^$")
     if [ ${cur_device} == "headphones" ]; then
