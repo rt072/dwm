@@ -31,7 +31,7 @@ File manager and terminal
 * List open windows ![screenshot](./.screenshots/windows-list.png)
 * System status ![screenshot](./.screenshots/status.png) CPU Load, volume info(icon change when headphones plugged), battery info(when battery level change, icon change too), memory info, free space on SSD, how many updates available, calendar, time and keyboard layout.
 * System tray ![screenshot](./.screenshots/tray.png)
-
+* Notification system - Dunst ![screenshot](./.screenshots/dunst.png)
 
 ### My Keybindings
 
