@@ -33,6 +33,9 @@ File manager and terminal
 * System tray ![screenshot](./.screenshots/tray.png)
 * Notification system - Dunst ![screenshot](./.screenshots/dunst.png)
 
+
+
+
 ### My Keybindings
 
 The MODKEY is set to the `Super` key (`Windows` key)
