@@ -142,7 +142,7 @@ static Key keys[] = {
     { MODKEY,                 		0xff61,     spawn,          SHCMD ("gnome-screenshot -a")},
     { MODKEY|ControlMask,           XK_v,       spawn,          SHCMD ("vncviewer")},
     { MODKEY|ControlMask,      		XK_equal,   spawn,          SHCMD ("galculator")},
-    { MODKEY|ControlMask,      		XK_l,       spawn,          SHCMD ("i3lock-fancy")},
+    { MODKEY|ControlMask,      		XK_l,       spawn,          SHCMD ("i3lock -i /home/rt072/Pictures/lock.jpg -c '#000000'")}, 
     { Mod1Mask,             	    XK_t,       spawn,          SHCMD ("translate_textbox")},
     { ControlMask|Mod1Mask,    	    XK_Up,      spawn,          SHCMD ("mpc volume +2")},
     { ControlMask|Mod1Mask,    	    XK_Down,    spawn,          SHCMD ("mpc volume -2")},
